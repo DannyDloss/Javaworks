@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulario de contacto</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <main class="container">
+    <section class="form-card">
+      <h1>Formulario de contacto</h1>
+      <p class="intro">Completa tus datos y envía el mensaje.</p>
+
+      <form id="contactForm">
+        <div class="field">
+          <label for="name">Nombre completo</label>
+          <input id="name" name="name" type="text" placeholder="Ej. Eli Pérez" required minlength="2">
+        </div>
+
+        <div class="field">
+          <label for="email">Correo electrónico</label>
+          <input id="email" name="email" type="email" placeholder="tu@correo.com" required>
+        </div>
+
+        <div class="field">
+          <label for="message">Mensaje</label>
+          <textarea id="message" name="message" rows="5" placeholder="Escribe tu mensaje..." required minlength="5"></textarea>
+        </div>
+
+        <button id="submitButton" type="submit">Enviar mensaje</button>
+        <p id="status" class="status" role="status" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+</body>
+</html>
